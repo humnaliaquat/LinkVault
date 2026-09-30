@@ -1,36 +1,192 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LinkVault 🔗
 
-## Getting Started
+The frontend of **LinkVault**, a modern web application for saving, organizing, and managing useful links in one place.
 
-First, run the development server:
+Built with **Next.js, TypeScript, and Tailwind CSS**, the frontend provides a clean and responsive interface for interacting with the LinkVault backend.
+
+## ✨ Features
+
+- 🔐 User authentication
+- 🔗 Save and manage useful links
+- 📝 Add and edit link details
+- 🗂️ Organize links
+- 🔍 Search through saved links
+- 🗑️ Delete links
+- 📱 Responsive design
+- ⚡ Fast and modern UI
+- 🔄 API integration with the backend
+
+## 🛠️ Tech Stack
+
+- **Next.js** — React framework
+- **TypeScript** — Type-safe development
+- **Tailwind CSS** — Styling and responsive design
+- **Axios** — API requests
+- **Lucide React** — Icons
+
+## 📁 Project Structure
+
+```text
+frontend/
+│
+├── app/
+│   ├── components/
+│   ├── dashboard/
+│   ├── login/
+│   ├── register/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── public/
+│   └── ...
+│
+├── .env.local
+├── .gitignore
+├── eslint.config.mjs
+├── next.config.ts
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── tsconfig.json
+└── README.md
+```
+
+> The exact folder structure may change as the project develops.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have installed:
+
+- [Node.js](https://nodejs.org/)
+- npm
+
+### 1. Clone the repository
+
+```bash
+git clone <your-repository-url>
+cd LinkVault/frontend
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env.local` file in the frontend root:
+
+```env
+NEXT_PUBLIC_API_URL=http://localhost:5000
+```
+
+Update the API URL if your backend is running on a different port or deployed server.
+
+### 4. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The application will automatically update whenever you make changes to the source code.
 
-## Learn More
+## 🔌 Backend
 
-To learn more about Next.js, take a look at the following resources:
+The frontend communicates with the LinkVault backend through REST APIs.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Make sure the backend is running before using features that require API access.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Example:
 
-## Deploy on Vercel
+```text
+Frontend
+   │
+   │ HTTP Requests
+   ▼
+Backend API
+   │
+   ▼
+MongoDB
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📜 Available Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Command | Description |
+|---|---|
+| `npm run dev` | Starts the development server |
+| `npm run build` | Creates a production build |
+| `npm start` | Starts the production server |
+| `npm run lint` | Runs ESLint |
+
+## 🏗️ Production Build
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+Then start the production server:
+
+```bash
+npm start
+```
+
+## 🔐 Environment Variables
+
+The following environment variable is required:
+
+| Variable | Description |
+|---|---|
+| `NEXT_PUBLIC_API_URL` | URL of the LinkVault backend API |
+
+**Never commit `.env.local` or other files containing private credentials or secrets.**
+
+## 🎯 Project Goal
+
+LinkVault was built as a full-stack project to provide a simple solution for storing and organizing useful links while practicing modern web development concepts.
+
+The frontend focuses on:
+
+- Component-based architecture
+- API integration
+- Authentication flows
+- Responsive UI development
+- TypeScript
+- Modern Next.js App Router
+- Clean and reusable components
+
+## 🔮 Future Improvements
+
+- ⭐ Favorite links
+- 🏷️ Tags and advanced filtering
+- 🔗 Link previews
+- 🌙 Dark mode
+- 📊 Link analytics
+- 📥 Import browser bookmarks
+- 📤 Export saved links
+- 🌐 Browser extension
+- ☁️ Production deployment
+
+## 👩‍💻 Author
+
+**Hamna Liaqat**
+
+Full-Stack Developer
+
+- GitHub: `https://github.com/humnaliaquat`
+- LinkedIn: `https://www.linkedin.com/in/hamna-liaquat-9b51a2275/`
+
+---
+
+⭐ **LinkVault — Keep your links safe, organized, and easy to find.**
